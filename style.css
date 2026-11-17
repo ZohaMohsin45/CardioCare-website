@@ -1,0 +1,1569 @@
+
+:root {
+  --bg-topbar: #0f172a;          
+  --bg-dark: #1e1b4b;           
+  --primary-purple: #9333ea;     
+  --primary-purple-hover: #7e22ce; 
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: var(--bg-dark);
+  overflow-x: hidden;
+}
+
+/* ================= TOP BAR ================= */
+
+.top-bar {
+  background-color: var(--bg-topbar);
+  font-size: 13px;
+  color: #cbd5e1;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.emergency-text {
+  color: #c084fc; /* Light purple accent for emergency text */
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.dot {
+  width: 7px;
+  height: 7px;
+  background-color: #a855f7;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.email-link {
+  color: #cbd5e1;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.email-link:hover {
+  color: #ffffff;
+}
+
+/* ================= NAVBAR ================= */
+
+.logo-icon {
+  width: 42px;
+  height: 42px;
+  background-color: var(--primary-purple);
+  color: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.brand-name {
+  font-size: 20px;
+  font-weight: 700;
+  color: #0f172a;
+  line-height: 1.1;
+}
+
+.brand-sub {
+  font-size: 11px;
+  color: #64748b;
+  font-weight: 500;
+}
+
+.navbar-nav .nav-link {
+  color: #334155;
+  font-size: 14.5px;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: var(--primary-purple);
+}
+
+/* //////////////////////Custom Buttons/////////////// */
+
+
+.btn-cardiocare {
+  background-color: var(--primary-purple);
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 11px 22px;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 4px 14px rgba(147, 51, 234, 0.35);
+  transition: all 0.25s ease;
+}
+
+.btn-cardiocare:hover {
+  background-color: var(--primary-purple-hover);
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.btn-outline-light-custom {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 11px 22px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.25s ease;
+}
+
+.btn-outline-light-custom:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+/* ================= HERO SECTION ================= */
+
+
+.hero-section {
+  min-height: calc(100vh - 115px);
+  padding: 70px 0;
+  /* Deep Indigo Background + Bottom-Right Purple Glow + Dot Pattern */
+  background-color: #1e1b4b;
+  background-image: 
+    radial-gradient(circle at 92% 92%, rgba(147, 51, 234, 0.5) 0%, rgba(30, 27, 75, 0) 48%),
+    radial-gradient(rgba(255, 255, 255, 0.07) 1.2px, transparent 1.2px);
+  background-size: 100% 100%, 36px 36px;
+}
+
+.custom-badge {
+  background-color: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #e2e8f0;
+  font-size: 12.5px;
+  font-weight: 500;
+  padding: 7px 14px;
+  border-radius: 50px;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.hero-title {
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.5px;
+}
+
+.text-purple-accent {
+  color: #c084fc;
+}
+
+.hero-desc {
+  color: #94a3b8;
+  font-size: 16px;
+  line-height: 1.65;
+  max-width: 520px;
+}
+
+/* Stats */
+.stat-number {
+  font-size: 28px;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.stat-label {
+  font-size: 13px;
+  color: #94a3b8;
+}
+
+.stat-divider {
+  width: 1px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* ================= IMAGE & FLOATING CARDS ================= */
+
+
+.hero-image-box {
+  position: relative;
+  max-width: 450px;
+}
+
+.image-frame {
+  padding: 14px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(8px);
+}
+
+.image-frame img {
+  width: 100%;
+  height: 330px;
+  object-fit: cover;
+}
+
+.floating-card {
+  position: absolute;
+  background-color: #ffffff;
+  padding: 12px 18px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+  z-index: 5;
+}
+
+.card-top-left {
+  top: -20px;
+  left: -20px;
+}
+
+.card-bottom-right {
+  bottom: -20px;
+  right: -20px;
+}
+
+.card-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+
+.purple-bg {
+  background-color: #f3e8ff;
+  color: #9333ea;
+}
+
+.green-bg {
+  background-color: #dcfce7;
+  color: #16a34a;
+}
+
+/* ================= MOBILE RESPONSIVENESS ================= */
+
+
+@media (max-width: 991.98px) {
+  .hero-section {
+    padding: 50px 0 70px;
+  }
+  .hero-title {
+    font-size: 38px;
+  }
+  .hero-image-box {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .hero-title {
+    font-size: 32px;
+  }
+  .image-frame img {
+    height: 260px;
+  }
+  .card-top-left {
+    top: -15px;
+    left: 10px;
+    padding: 8px 14px;
+  }
+  .card-bottom-right {
+    bottom: -15px;
+    right: 10px;
+    padding: 8px 14px;
+  }
+  .stat-number {
+    font-size: 22px;
+  }
+}
+
+
+/* ================== APPOINTMENT SECTION STYLES ================= */
+
+.appointment-section {
+  background-color: #ffffff;
+  color: #0f172a;
+}
+
+.badge-pill-purple {
+  background-color: #f3e8ff;
+  color: #9333ea;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 6px 16px;
+  border-radius: 50px;
+  display: inline-flex;
+  align-items: center;
+  letter-spacing: 0.5px;
+}
+
+.section-main-title {
+  font-size: 38px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+.section-sub-text {
+  font-size: 15px;
+  max-width: 500px;
+}
+
+/* ///////////////////Dark Form Card /////////////////*/
+
+.appointment-card {
+  background-color: #131c31; /* Dark navy card background matching top bar */
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+  max-width: 1140px;
+}
+
+/* //////////////////Form Inputs styling /////////////////*/
+
+.custom-input {
+  background-color: rgba(255, 255, 255, 0.07) !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  color: #ffffff !important;
+  padding: 12px 16px;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.custom-input::placeholder {
+  color: #64748b;
+}
+
+.custom-input:focus {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  border-color: #9333ea !important;
+  box-shadow: 0 0 0 0.25rem rgba(147, 51, 234, 0.25) !important;
+}
+
+/*///////////// Fix dropdown arrow color for dark input //////////////////*/
+
+.form-select.custom-input {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%2394a3b8' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+}
+
+/* ////////////////Submit Button //////////////////*/
+
+.btn-purple-submit {
+  background-color: var(--primary-purple);
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 15px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 6px 20px rgba(147, 51, 234, 0.4);
+  transition: all 0.25s ease;
+}
+
+.btn-purple-submit:hover {
+  background-color: var(--primary-purple-hover);
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(147, 51, 234, 0.5);
+}
+
+/*/////////////// Responsive adjustments////////////// */
+
+@media (max-width: 768px) {
+  .section-main-title {
+    font-size: 30px;
+  }
+}
+
+
+
+/* ================= MEET THE DOCTOR SECTION STYLES ================= */
+
+
+.doctor-section {
+  background-color: #f8fafc;
+}
+
+.doctor-image-box {
+  max-width: 420px;
+}
+
+.doctor-image-frame {
+  border: 1px solid #e2e8f0 !important;
+}
+
+/* //////////////Floating Badge on Image///////////// */
+
+.floating-doc-card {
+  position: absolute;
+  bottom: 45px;
+  right: -20px;
+  border: 1px solid #e2e8f0;
+  z-index: 5;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08) !important;
+}
+
+.doc-badge-icon {
+  width: 40px;
+  height: 40px;
+  background-color: #f3e8ff;
+  color: var(--primary-purple);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+
+.doctor-title {
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+}
+
+.doc-stat-box {
+  border: 1px solid #e2e8f0 !important;
+  transition: transform 0.2s;
+}
+
+.doc-stat-box:hover {
+  transform: translateY(-3px);
+}
+
+/* /////Checklist custom check icon//////////// */
+
+.check-icon {
+  width: 20px;
+  height: 20px;
+  background-color: #f3e8ff;
+  color: var(--primary-purple);
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  flex-shrink: 0;
+}
+
+/* /////////////Responsive adjustments ////////////*/
+
+@media (max-width: 991.98px) {
+  .doctor-title {
+    font-size: 30px;
+  }
+  .floating-doc-card {
+    right: 10px;
+    bottom: 60px;
+  }
+}
+
+
+
+/* ================= SERVICES SECTION STYLES ================= */
+
+
+.services-section {
+  background-color: #ffffff;
+}
+
+.service-card {
+  border-color: #f1f5f9 !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  border-color: #e9d5ff !important;
+  box-shadow: 0 15px 35px rgba(147, 51, 234, 0.08);
+}
+
+/* /////////////Soft Colored Icon Boxes //////////*/
+
+.service-icon-box {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.icon-purple-soft {
+  background-color: #f3e8ff;
+  color: #9333ea;
+}
+
+.icon-blue-soft {
+  background-color: #e0f2fe;
+  color: #0284c7;
+}
+
+.icon-indigo-soft {
+  background-color: #ede9fe;
+  color: #7c3aed;
+}
+
+.icon-green-soft {
+  background-color: #dcfce7;
+  color: #16a34a;
+}
+
+.icon-amber-soft {
+  background-color: #fef3c7;
+  color: #d97706;
+}
+
+.icon-pink-soft {
+  background-color: #fce7f3;
+  color: #db2777;
+}
+
+/*///////// Bottom Link in Cards /////*/
+
+.service-link {
+  margin-top: auto;
+  text-decoration: none;
+  color: var(--primary-purple);
+  font-size: 13.5px;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  transition: gap 0.2s ease;
+}
+
+.service-link i {
+  font-size: 12px;
+  transition: transform 0.2s ease;
+}
+
+.service-link:hover {
+  color: var(--primary-purple-hover);
+}
+
+.service-link:hover i {
+  transform: translateX(4px);
+}
+
+
+
+/* ================= WHY CHOOSE US SECTION STYLES ================= */
+
+
+.why-choose-section {
+  background-color: #131c31; 
+  border-bottom: 5px solid var(--primary-purple); /* Bottom Royal Purple Accent Line */
+}
+
+.badge-pill-dark-purple {
+  background-color: rgba(147, 51, 234, 0.18);
+  color: #c084fc;
+  border: 1px solid rgba(192, 132, 252, 0.25);
+  font-size: 12px;
+  font-weight: 700;
+  padding: 6px 16px;
+  border-radius: 50px;
+  display: inline-flex;
+  align-items: center;
+  letter-spacing: 0.5px;
+}
+
+/*////////////// Dark Glassmorphic Cards ///////////////*/
+
+.why-card {
+  background-color: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: all 0.3s ease;
+}
+
+.why-card:hover {
+  background-color: rgba(255, 255, 255, 0.07);
+  border-color: rgba(192, 132, 252, 0.4);
+  transform: translateY(-6px);
+}
+
+/* /////////////////Circular Dark Colored Icons//////////////// */
+
+.why-icon-circle {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.icon-purple-dark {
+  background-color: rgba(147, 51, 234, 0.2);
+  color: #c084fc;
+}
+
+.icon-blue-dark {
+  background-color: rgba(56, 189, 248, 0.18);
+  color: #38bdf8;
+}
+
+.icon-green-dark {
+  background-color: rgba(34, 197, 94, 0.18);
+  color: #4ade80;
+}
+
+.icon-amber-dark {
+  background-color: rgba(250, 204, 21, 0.18);
+  color: #facc15;
+}
+
+
+/* ================= STATS BANNER SECTION (FULL SCREEN) ================= */
+
+
+.stats-banner-section {
+  width: 100%;
+ 
+  background: linear-gradient(135deg, #9333ea 0%, #7e22ce 100%);
+  color: #ffffff;
+  padding: 60px 0;
+}
+
+.banner-stat-num {
+  font-size: 45px;
+  font-weight: 800;
+  letter-spacing: -1px;
+  line-height: 1.1;
+}
+
+.banner-stat-text {
+  font-size: 12px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.85) !important;
+}
+
+/* ////////////////Vertical divider lines on Desktop //////////////////////*/
+
+
+@media (min-width: 992px) {
+  .stat-col-divider {
+    border-right: 1px solid rgba(255, 255, 255, 0.25);
+  }
+}
+
+/*///////////// Mobile & Tablet responsiveness//////////////// */
+
+
+@media (max-width: 767.98px) {
+  .banner-stat-num {
+    font-size: 38px;
+  }
+  .banner-stat-text {
+    font-size: 14px;
+  }
+}
+
+
+/* ================= TREATMENT PROCESS SECTION (FULL SCREEN) ================= */
+
+
+.process-section {
+  background-color: #ffffff;
+  min-height: 100vh; 
+  width: 100%;
+  padding: 60px 0;
+}
+
+.process-steps-wrapper {
+  padding-top: 10px;
+}
+
+/*//////////////// Connecting Line behind the cards/////////// */
+
+
+.process-connecting-line {
+  position: absolute;
+  top: 66px;
+  left: 12%;
+  right: 12%;
+  height: 2px;
+  background-color: #e9d5ff;
+  z-index: 1;
+}
+
+/*//////////////// White Process Cards///////////////// */
+
+
+.process-card {
+  border-color: #f1f5f9 !important;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.04);
+  transition: all 0.3s ease;
+}
+
+.process-card:hover {
+  transform: translateY(-6px);
+  border-color: #e9d5ff !important;
+  box-shadow: 0 15px 35px rgba(147, 51, 234, 0.09);
+}
+
+/*/////////// Circular Icons (Purple & Dark Navy Alternating)/////// */
+
+
+.process-icon-circle {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  color: #ffffff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.bg-purple-circle {
+  background-color: var(--primary-purple);
+  box-shadow: 0 8px 20px rgba(147, 51, 234, 0.3);
+}
+
+.bg-navy-circle {
+  background-color: #1e293b;
+  box-shadow: 0 8px 20px rgba(30, 41, 59, 0.25);
+}
+
+
+
+
+
+
+/* ================= DEPARTMENTS SECTION (FULL WIDTH & FULL SCREEN) ================= */
+
+
+.departments-section {
+  background-color: #f8fafc; 
+  min-height: 100vh;
+  width: 100%;
+  padding: 60px 0;
+}
+
+.dept-card {
+  border-color: #f1f5f9 !important;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.03);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.dept-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(147, 51, 234, 0.12);
+}
+
+/* ///////////First Highlighted Purple Card /////////*/
+
+
+.dept-card-purple {
+  background: linear-gradient(135deg, #9333ea 0%, #7e22ce 100%);
+  border: none !important;
+  box-shadow: 0 12px 30px rgba(147, 51, 234, 0.3);
+}
+
+.dept-card-purple .text-white-50 {
+  color: rgba(255, 255, 255, 0.85) !important;
+}
+
+/* /////////////Last Highlighted Dark Navy Card////////// */
+
+
+.dept-card-dark {
+  background-color: #131c31;
+  border: none !important;
+  box-shadow: 0 12px 30px rgba(19, 28, 49, 0.25);
+}
+
+/* ////////////Department Icon Boxes//////////// */
+
+
+.dept-icon-box {
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.icon-white-glass {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+}
+
+.icon-purple-dark-glass {
+  background-color: rgba(147, 51, 234, 0.25);
+  color: #c084fc;
+}
+
+
+/* ================= TESTIMONIALS SECTION (FULL WIDTH & FULL SCREEN) ================= */
+
+
+.testimonials-section {
+  background-color: #ffffff;
+  min-height: 100vh;
+  width: 100%;
+  padding: 60px 0;
+}
+
+.testimonial-card {
+  border-color: #f1f5f9 !important;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.03);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  border-color: #e9d5ff !important;
+  box-shadow: 0 15px 35px rgba(147, 51, 234, 0.08);
+}
+
+
+
+/*/////////////// Patient Initials Avatar Circles///////////// */
+
+
+.avatar-circle {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 14px;
+  color: #ffffff;
+  flex-shrink: 0;
+}
+
+.bg-blue-avatar {
+  background-color: #2563eb;
+}
+
+.bg-green-avatar {
+  background-color: #16a34a;
+}
+
+.bg-purple-avatar {
+  background-color: var(--primary-purple);
+}
+
+/*/////// Carousel Bottom Navigation Arrows////////// */
+
+
+.carousel-circle-btn {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: 1px solid #cbd5e1;
+  color: #0f172a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+
+.carousel-circle-btn:hover,
+.carousel-circle-btn.active-arrow {
+  border-color: var(--primary-purple);
+  color: var(--primary-purple);
+  background-color: #faf5ff;
+}
+
+/*//////// Custom Pill Dots///// */
+
+
+.custom-carousel-dots button {
+  width: 8px;
+  height: 8px;
+  border-radius: 50px;
+  border: none;
+  background-color: #cbd5e1;
+  padding: 0;
+  transition: all 0.3s ease;
+}
+
+.custom-carousel-dots button.active {
+  width: 24px;
+  background-color: var(--primary-purple);
+}
+
+
+
+
+/* ================= HEALTH BLOG SECTION (FULL WIDTH & FULL SCREEN) ================= */
+
+
+.blog-section {
+  background-color: #f8fafc;
+  min-height: 100vh;
+  width: 100%;
+  padding: 60px 0;
+}
+
+.blog-card {
+  border-color: #f1f5f9 !important;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.03);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(147, 51, 234, 0.09);
+}
+
+
+
+/* ///////////Colored Top Image Banners///////////// */
+
+
+.blog-card-banner {
+  height: 190px;
+  width: 100%;
+}
+
+.bg-purple-banner {
+  background: linear-gradient(135deg, #9333ea 0%, #7e22ce 100%);
+}
+
+.bg-blue-banner {
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+}
+
+.bg-green-banner {
+  background: linear-gradient(135deg, #16a34a 0%, #15803d 100%);
+}
+
+
+
+/* //////////Top-Left Translucent Category Pill///////// */
+
+
+.blog-category-pill {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  background-color: rgba(255, 255, 255, 0.22);
+  color: #ffffff;
+  font-size: 11.5px;
+  font-weight: 600;
+  padding: 5px 14px;
+  border-radius: 50px;
+  backdrop-filter: blur(4px);
+}
+
+
+
+/* ////////Center Watermark Icon /////////*/
+
+
+.blog-watermark-icon {
+  font-size: 62px;
+  color: rgba(255, 255, 255, 0.25);
+  transition: transform 0.3s ease;
+}
+
+.blog-card:hover .blog-watermark-icon {
+  transform: scale(1.1);
+}
+
+
+/* /////////Read Article Link////////// */
+
+
+.blog-read-link {
+  text-decoration: none;
+  color: var(--primary-purple);
+  font-size: 13.5px;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+}
+
+.blog-read-link i {
+  font-size: 12px;
+  transition: transform 0.2s ease;
+}
+
+.blog-read-link:hover {
+  color: var(--primary-purple-hover);
+}
+
+.blog-read-link:hover i {
+  transform: translateX(4px);
+}
+
+/* /////////////Bottom Outline Button///////////// */
+
+
+.btn-outline-purple {
+  color: var(--primary-purple);
+  border: 1.5px solid var(--primary-purple);
+  background-color: #ffffff;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 8px;
+  padding: 10px 24px;
+  transition: all 0.25s ease;
+}
+
+.btn-outline-purple:hover {
+  background-color: var(--primary-purple);
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(147, 51, 234, 0.25);
+}
+
+
+
+
+
+/* ================= FAQ SECTION (FULL SCREEN) ================= */
+
+.faq-section {
+  background-color: #ffffff;
+  min-height: 100vh;
+  width: 100%;
+  padding: 60px 0;
+}
+
+.custom-faq-accordion {
+  max-width: 960px; 
+}
+
+.custom-faq-accordion .accordion-item {
+  border: none;
+  border-bottom: 1px solid #e2e8f0;
+  background-color: transparent;
+}
+
+.custom-faq-accordion .accordion-button {
+  background-color: transparent !important;
+  color: #0f172a;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 22px 8px;
+  box-shadow: none !important;
+  transition: color 0.2s ease;
+}
+
+/* Remove default Bootstrap downward arrow */
+
+.custom-faq-accordion .accordion-button::after {
+  display: none;
+}
+
+/* Hover & Open State Color (Royal Purple) */
+
+.custom-faq-accordion .accordion-button:hover,
+.custom-faq-accordion .accordion-button:not(.collapsed) {
+  color: var(--primary-purple);
+}
+
+/* Custom Plus Icon Styling */
+
+.faq-plus-icon {
+  color: var(--primary-purple);
+  font-size: 15px;
+  transition: transform 0.3s ease;
+}
+
+/* Rotate '+' into 'x' when opened */
+
+.custom-faq-accordion .accordion-button:not(.collapsed) .faq-plus-icon {
+  transform: rotate(45deg);
+}
+
+.custom-faq-accordion .accordion-body {
+  padding: 0 8px 22px 8px;
+  font-size: 14.5px;
+  line-height: 1.7;
+}
+
+
+
+
+/* ================= CTA SECTION (FULL SCREEN) ================= */
+
+
+.cta-section {
+  min-height: 100vh;
+  width: 100%;
+
+  /* Dark Navy to Royal Purple diagonal glow matching screenshot layout */
+  background: linear-gradient(125deg, #0f172a 0%, #131c31 55%, #581c87 82%, #9333ea 100%);
+  padding: 60px 0;
+}
+
+.cta-main-title {
+  font-size: 42px;
+  font-weight: 800;
+  line-height: 1.25;
+  letter-spacing: -0.5px;
+  max-width: 720px;
+}
+
+.cta-sub-text {
+  font-size: 16px;
+  line-height: 1.7;
+  max-width: 600px;
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+/* Secondary Translucent Outline Button */
+
+.btn-cta-outline {
+  color: #ffffff;
+  border: 1.5px solid rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.05);
+  font-weight: 600;
+  font-size: 15px;
+  border-radius: 10px;
+  transition: all 0.25s ease;
+}
+
+.btn-cta-outline:hover {
+  background-color: #ffffff;
+  color: #131c31;
+  border-color: #ffffff;
+  transform: translateY(-2px);
+}
+
+
+/* //////////////Mobile responsiveness ///////////*/
+
+@media (max-width: 767.98px) {
+  .cta-main-title {
+    font-size: 30px;
+  }
+  .cta-sub-text {
+    font-size: 14.5px;
+  }
+}
+
+
+
+/* ================= NEWSLETTER SECTION STYLES ================= */
+
+
+.newsletter-section {
+  background-color: #faf5ff; 
+  border-bottom: 1px solid #f3e8ff;
+}
+
+/* Circular Purple Envelope Icon */
+
+.newsletter-icon-circle {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background-color: var(--primary-purple);
+  color: #ffffff;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 20px rgba(147, 51, 234, 0.3);
+}
+
+.newsletter-title {
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+.newsletter-sub-text {
+  font-size: 15px;
+  line-height: 1.65;
+  max-width: 560px;
+}
+
+/* Form Input & Button Alignment */
+
+.newsletter-form {
+  max-width: 500px;
+}
+
+.newsletter-input {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 13px 18px;
+  font-size: 14.5px;
+  color: #0f172a;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+}
+
+.newsletter-input:focus {
+  border-color: var(--primary-purple);
+  box-shadow: 0 0 0 0.25rem rgba(147, 51, 234, 0.15);
+}
+
+/* Responsive adjustments */
+@media (max-width: 575.98px) {
+  .newsletter-title {
+    font-size: 26px;
+  }
+  .newsletter-form .btn-purple-submit {
+    width: 100%;
+  }
+}
+
+
+/* ================= CONTACT US SECTION (FULL WIDTH & FULL SCREEN) ================= */
+
+
+.contact-section {
+  background-color: #ffffff;
+  min-height: 100vh;
+  width: 100%;
+  padding: 60px 0;
+}
+
+.contact-card {
+  border-color: #f1f5f9 !important;
+  box-shadow: 0 6px 24px rgba(146, 81, 252, 0.03);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-card:hover {
+  transform: translateY(-6px);
+  border-color: #c89df7 !important;
+  box-shadow: 0 15px 35px rgba(106, 34, 173, 0.08);
+}
+
+/* Circular Soft Colored Icons */
+.contact-icon-circle {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.text-purple-accent {
+  color: var(--primary-purple) !important;
+}
+
+
+
+/* ================= MAIN FOOTER SECTION STYLES ================= */
+
+
+.main-footer {
+  width: 100%;
+  background-color: #0b1120;
+  color: #cbd5e1;
+  border-top: 3px solid var(--primary-purple);
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.footer-logo-box {
+  width: 44px;
+  height: 44px;
+  background-color: var(--primary-purple);
+  color: #ffffff;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+/* Certification Badges */
+
+.footer-cert-badge {
+  background-color: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #e2e8f0;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 6px 14px;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Social Media Circular Buttons */
+
+.social-circle-btn {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+.social-circle-btn:hover {
+  transform: translateY(-3px);
+  color: #ffffff;
+}
+
+.bg-fb { background-color: #2563eb; }
+.bg-ig { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
+.bg-in { background-color: #0284c7; }
+.bg-yt { background-color: #dc2626; }
+
+/* Right Newsletter Card */
+
+.footer-newsletter-card {
+  background-color: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer-mail-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background-color: rgba(147, 51, 234, 0.2);
+  color: #c084fc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.footer-input {
+  background-color: rgba(255, 255, 255, 0.06) !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  color: #ffffff !important;
+  border-radius: 10px;
+  padding: 11px 16px;
+  font-size: 14px;
+}
+
+.footer-input::placeholder {
+  color: #64748b;
+}
+
+/* 5 Columns Headers with Colored Left Vertical Accent Line */
+
+.footer-col-title {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 15px;
+  padding-left: 10px;
+  margin-bottom: 18px;
+}
+
+.border-purple { border-left: 3px solid var(--primary-purple); }
+.border-blue   { border-left: 3px solid #38bdf8; }
+.border-green  { border-left: 3px solid #4ade80; }
+.border-amber  { border-left: 3px solid #facc15; }
+
+/* Footer Links List */
+
+.footer-links-list li {
+  margin-bottom: 10px;
+}
+
+.footer-links-list a {
+  color: #94a3b8;
+  text-decoration: none;
+  font-size: 13.5px;
+  transition: all 0.2s ease;
+}
+
+.footer-links-list a:hover {
+  color: #c084fc;
+  padding-left: 4px;
+}
+
+/* Working Hours List */
+
+.footer-hours-list li {
+  color: #94a3b8;
+  margin-bottom: 9px;
+}
+
+.open-status-pill {
+  background-color: rgba(34, 197, 94, 0.12);
+  border: 1px solid rgba(34, 197, 94, 0.3);
+  color: #4ade80;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 5px 12px;
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.green-dot {
+  width: 7px;
+  height: 7px;
+  background-color: #4ade80;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/* Contact Info Icons */
+
+.footer-contact-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background-color: rgba(147, 51, 234, 0.15);
+  color: #c084fc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+
+
+/* ================= FOOTER GALLERY, AWARDS & BOTTOM BAR STYLES ================= */
+
+
+.footer-gallery-item {
+  height: 155px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer-gallery-item img {
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.35s ease;
+}
+
+.footer-gallery-item:hover img {
+  transform: scale(1.08);
+}
+
+/* Accreditations & Awards Cards */
+
+.footer-award-card {
+  background-color: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: all 0.25s ease;
+}
+
+.footer-award-card:hover {
+  background-color: rgba(255, 255, 255, 0.06);
+  border-color: rgba(147, 51, 234, 0.4);
+  transform: translateY(-2px);
+}
+
+.award-icon-box {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  flex-shrink: 0;
+}
+
+.icon-amber  { background-color: rgba(245, 158, 11, 0.15); color: #fbbf24; }
+.icon-blue   { background-color: rgba(56, 189, 248, 0.15); color: #38bdf8; }
+.icon-purple { background-color: rgba(147, 51, 234, 0.2);  color: #c084fc; }
+.icon-green  { background-color: rgba(34, 197, 94, 0.15);  color: #4ade80; }
+
+/* Recent Health Articles Cards */
+
+.footer-article-card {
+  background-color: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: all 0.25s ease;
+}
+
+.footer-article-card:hover {
+  background-color: rgba(255, 255, 255, 0.06);
+  border-color: rgba(147, 51, 234, 0.4);
+  transform: translateX(4px);
+}
+
+.footer-article-thumb {
+  width: 54px;
+  height: 54px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+/* Bottom Legal Links & Insurance Badges */
+
+.footer-legal-links a {
+  color: #94a3b8;
+  text-decoration: none;
+  font-size: 12px;
+  transition: color 0.2s ease;
+}
+
+.footer-legal-links a:hover {
+  color: #c084fc;
+}
+
+.insurance-pill {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #cbd5e1;
+  font-size: 11px;
+  font-weight: 500;
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+
+/* Floating Purple Heart Button (Bottom-Right) */
+
+.floating-heart-btn {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background-color: var(--primary-purple);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  text-decoration: none;
+  box-shadow: 0 8px 25px rgba(147, 51, 234, 0.45);
+  z-index: 999;
+  transition: all 0.25s ease;
+}
+
+.floating-heart-btn:hover {
+  background-color: var(--primary-purple-hover);
+  color: #ffffff;
+  transform: translateY(-4px);
+}
